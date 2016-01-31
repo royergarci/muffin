@@ -1,4 +1,4 @@
-<header id="header" class="app-header navbar" role="menu">
+ <header id="header" class="app-header navbar" role="menu">
       <!-- navbar header -->
       <div class="navbar-header bg-dark">
         <button class="pull-right visible-xs dk" ui-toggle-class="show" target=".navbar-collapse">
@@ -11,7 +11,7 @@
         <a href="#/" class="navbar-brand text-lt">
           <i class="fa fa-btc"></i>
           <img src="img/logo.png" alt="." class="hide">
-          <span class="hidden-folded m-l-xs">Angulr</span>
+          <span class="hidden-folded m-l-xs">Facturas</span>
         </a>
         <!-- / brand -->
       </div>
