@@ -1,0 +1,76 @@
+
+/*
+        Added by stephanj for the padding of the container
+*/
+.container-fluid {
+    padding-right: 100px;
+    padding-left: 100px;
+    *zoom: 1;
+}
+/*
+        Added by stephanj for school table
+*/
+table {
+    max-width: 60%;
+    margin-left:auto; 
+    margin-right:auto; 
+
+}
+/*
+        Added by stephanj for school table
+*/
+.table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+/*
+        Added by stephanj for school table heading
+*/
+.table th {
+    padding: 8px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.tablebackground {
+    background-color: black;
+    color: white;
+}
+
+form {
+    max-width: 40%;
+    margin-left:auto; 
+    margin-right:auto; 
+}
+
+.full {
+    max-width: 100%;
+    margin-left:auto; 
+    margin-right:auto; 
+}
+
+/*
+   change width of adding student button
+*/
+
+input[type="submit"].studentbtn{
+    width: 220px;
+}
+
+input[type="submit"].resultbtn{
+    width: 220px;
+}
+
+.studentinputerror {
+    color: red;
+}
+
+.ajaxLoad{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    display: none;
+}
