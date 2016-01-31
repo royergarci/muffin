@@ -29,7 +29,7 @@ class Factura extends CI_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('dashboard', array('error' => ' ' ));
+		$this->load->view('uploadFactura', array('error' => ' ' ));
 		$this->load->helper('form');
 
 		/*$query = ParseUser::query();
@@ -62,10 +62,11 @@ class Factura extends CI_Controller {
 			$error = array('error' => $this->upload->display_errors());
 
 			$this->load->view('upload', $error);
-			echo $error;
+			print_r ($error);
 		}
 		else
 		{
+			echo 'Aqui en upload';
 			$data['action'] = 'Subiendo la factura';
 			$this->load->view('cargandoFactura', $data);
 			$data = array('upload_data' => $this->upload->data());

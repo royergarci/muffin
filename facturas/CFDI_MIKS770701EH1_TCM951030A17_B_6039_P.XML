@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" version="3.2" serie="B" folio="6039" fecha="2016-01-21T10:37:50" sello="Sm56OtMWg8GV313zbTzb5eO7jgRLl+99d8P2tbP6GkDNRygv6lgxX2X8iu9qx9gXZZi8hV9hAp4Fbw/qXzh00TL45ERzl41zsnF7MbwescG8mwjmbR4o00u1D9YCR+eFLkTJKxj+Gys+6bUdU8dpyn6zJCyLD74BkVMH2g0SyjQ=" formaDePago="PAGO EN UNA SOLA EXHIBICION" noCertificado="00001000000300485214" certificado="MIIEWjCCA0KgAwIBAgIUMDAwMDEwMDAwMDAzMDA0ODUyMTQwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzA3MTIxOTE1MjBaFw0xNzA3MTIxOTE1MjBaMIGmMR4wHAYDVQQDExVTSU1KQSBNSVpSQUhJIEtBTkFSRUsxHjAcBgNVBCkTFVNJTUpBIE1JWlJBSEkgS0FOQVJFSzEeMBwGA1UEChMVU0lNSkEgTUlaUkFISSBLQU5BUkVLMRYwFAYDVQQtEw1NSUtTNzcwNzAxRUgxMRswGQYDVQQFExJNSUtTNzcwNzAxTURGWk5NMDMxDzANBgNVBAsTBlVOSURBRDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAv6bLWvY6N8/CF4gRjU/u9PrJVWd9uVkC2Fm0uwXPR/3mebC3DzN/ybfViW0QCegD0f1A0PESBOafOsV0HxCMjoyzj13KNQMgtR4kwj1EG8PuBFzuqV5mz2VFYvceH0d+XJFickgbAiHVXVTN2chPseHKLImMYINeemoXuagd70ECAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAGPrNDDwOlXnmSorqxDCtrmNF4Qt08LifN7kLDJlMX+IM4dJRswXw7oNX3zl+KSmU9GFmzpBIm9DbWaaQyDxiI5ikPcHS/pX07ulR22iUqWH+GCsvYNy5Dzbe+HrT5mxvgpwnDpmPMlUS78NewPQpVfwyEGIEP4yYdCvTdDBo+cNN2whWlzQ0H5h0tOOGeSB6eYuzO8CeQBxPWsIGhosJB7D/ZOdxFrgWibqlj/W7BxedrlL9Y1ebKnKKoC52NS1uQHkj03c4bhT+xBj0BbUkuaxK4IAPC74VQWHgRNcqrGZzJtmeI0V3861qEbvLnzqwZvgU6HArlaP45WuXLgx1JE=" condicionesDePago="45" subTotal="500.00" total="500.00" metodoDePago="TRANSFERENCIA ELECTRONICA" tipoDeComprobante="egreso" Moneda="MXN" LugarExpedicion="MEXICO, D.F." NumCtaPago="8006">
+  <cfdi:Emisor rfc="MIKS770701EH1" nombre="SIMJA MIZRAHI KANAREK">
+    <cfdi:DomicilioFiscal calle="EJERCITO NACIONAL" noExterior="1150" colonia="POLANCO" localidad="D.F" municipio="MIGUEL HIDALGO" estado="D.F." pais="MEXICO" codigoPostal="11560" />
+    <cfdi:ExpedidoEn calle="EJERCITO NACIONAL" noExterior="1150" colonia="POLANCO" localidad="D.F" municipio="MIGUEL HIDALGO" estado="D.F." pais="MEXICO" codigoPostal="11560" />
+    <cfdi:RegimenFiscal Regimen="Persona Fìsica con Actividad Empresarial" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="TCM951030A17" nombre="TIENDA COMERCIAL MEXICANA, S.A. DE C.V.">
+    <cfdi:Domicilio calle="AV. REVOLUCION" noExterior="780" colonia="SAN JUAN" localidad="D.F." municipio="BENITO JUAREZ" estado="D.F." pais="MEXICO" codigoPostal="3730" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="5" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515173" descripcion="MINI ROL DE CANELA" valorUnitario="20.00" importe="100.00" />
+    <cfdi:Concepto cantidad="5" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515203" descripcion="MINI MUFFIN DE MORA" valorUnitario="20.00" importe="100.00" />
+    <cfdi:Concepto cantidad="5" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515210" descripcion="MINI BISQUET" valorUnitario="20.00" importe="100.00" />
+    <cfdi:Concepto cantidad="5" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515227" descripcion="MINI BROWNIE" valorUnitario="20.00" importe="100.00" />
+    <cfdi:Concepto cantidad="5" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515258" descripcion="MINI MUFFIN DE PLAT/CHOCO" valorUnitario="20.00" importe="100.00" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="0.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="0.00" importe="0.00" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital version="1.0" UUID="CC41EBB2-A5D2-4EBB-8A56-68DE3F69A27A" FechaTimbrado="2016-01-21T10:37:51" selloCFD="Sm56OtMWg8GV313zbTzb5eO7jgRLl+99d8P2tbP6GkDNRygv6lgxX2X8iu9qx9gXZZi8hV9hAp4Fbw/qXzh00TL45ERzl41zsnF7MbwescG8mwjmbR4o00u1D9YCR+eFLkTJKxj+Gys+6bUdU8dpyn6zJCyLD74BkVMH2g0SyjQ=" noCertificadoSAT="00001000000203312933" selloSAT="vLcJPB5Xh1wU1uyrfOpqCRVtli7rUL6h+Htuvh+RupxJ8hKiyWsDDLvvAbgKRDtmeKZ/NzyBJGfGOg0hIsKJ5ex3RPZY9JMMyLoO9wajL07IWpzECKD8Ym6381YYFiUkmL6UMMS0ZERvWgbRerjlmRGXTzUlrvcDaLJ0A4QUTus=" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" />
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <lev1add:EDCINVOICE xsi:schemaLocation="http://www.edcinvoice.com/lev1add http://www.edcinvoice.com/lev1add/lev1add.xsd" xmlns:lev1add="http://www.edcinvoice.com/lev1add">[H0]|TCM951030A17|900049|9.65||00001000000300485214|0|P|ComercialMexicana||
+[H1]|B|6039||2016-01-21T10:37:50|0|2000-01-01T00:00:00|PAGO EN UNA SOLA EXHIBICION|45|ORIGINAL|NOTA DE CREDITO||||||||||||||907854|0||||MEXICO, D.F.|TRANSFERENCIA ELECTRONICA|MXN|||||||||||||D00|P|||||||
+[H2]|SIMJA MIZRAHI KANAREK|MIKS770701EH1|7504020827003|EJERCITO NACIONAL|1150||POLANCO|D.F||MIGUEL HIDALGO|D.F.|MEXICO|11560|Persona Fìsica con Actividad Empresarial||||||||||****8006|
+[H3]||||EJERCITO NACIONAL|1150||POLANCO|D.F||MIGUEL HIDALGO|D.F.|MEXICO|11560||||||||||||
+[H4]|TIENDA COMERCIAL MEXICANA, S.A. DE C.V.|TCM951030A17|7501083100920|AV. REVOLUCION|780||SAN JUAN|D.F.||BENITO JUAREZ|D.F.|MEXICO|3730||||||||||||
+[H5]|MEGA MIXCOAC|TCM951030A17|7505000090165|AV. REVOLUCION|780||MIXCOAC|D.F||BENITO JUAREZ|D.F.|MEXICO|3730||||||||||||
+[D]|7503010515173||MINI ROL DE CANELA||5|PCE||20.00||||||||||||||||100.00|0|||||||||||100.00|100.00|0|0|||||||||||||||||0|||||||||||||||||
+[D]|7503010515203||MINI MUFFIN DE MORA||5|PCE||20.00||||||||||||||||100.00|0|||||||||||100.00|100.00|0|0|||||||||||||||||0|||||||||||||||||
+[D]|7503010515210||MINI BISQUET||5|PCE||20.00||||||||||||||||100.00|0|||||||||||100.00|100.00|0|0|||||||||||||||||0|||||||||||||||||
+[D]|7503010515227||MINI BROWNIE||5|PCE||20.00||||||||||||||||100.00|0|||||||||||100.00|100.00|0|0|||||||||||||||||0|||||||||||||||||
+[D]|7503010515258||MINI MUFFIN DE PLAT/CHOCO||5|PCE||20.00||||||||||||||||100.00|0|||||||||||100.00|100.00|0|0|||||||||||||||||0|||||||||||||||||
+[S]|500.00||||||0.00|0.00|500.00|500.00|25|0|0|||||||||||||||||5||||||500.00||||
+[CO]|||3.2|2016-01-21T10:37:50|egreso|PAGO EN UNA SOLA EXHIBICION|45|500.00|MXN|500.00|TRANSFERENCIA ELECTRONICA|MEXICO, D.F.|8006|MIKS770701EH1|SIMJA MIZRAHI KANAREK|EJERCITO NACIONAL|1150|POLANCO|D.F|MIGUEL HIDALGO|D.F.|MEXICO|11560|EJERCITO NACIONAL|1150|POLANCO|D.F|MIGUEL HIDALGO|D.F.|MEXICO|115|
+[CO]|60|Persona Fìsica con Actividad Empresarial|TCM951030A17|TIENDA COMERCIAL MEXICANA, S.A. DE C.V.|AV. REVOLUCION|780|SAN JUAN|D.F.|BENITO JUAREZ|D.F.|MEXICO|3730|5|UNIDADES (PIEZAS)|7503010515173|MINI ROL DE CANELA|20.00|100.00|5|UNIDADES (PIEZAS)|7503010515203|MINI MUFFIN DE MORA|20.00|100.00|5|
+[CO]||UNIDADES (PIEZAS)|7503010515210|MINI BISQUET|20.00|100.00|5|UNIDADES (PIEZAS)|7503010515227|MINI BROWNIE|20.00|100.00|5|UNIDADES (PIEZAS)|7503010515258|MINI MUFFIN DE PLAT/CHOCO|20.00|100.00|IVA|0.00|0.00|0.00|||
+[SE]|Sm56OtMWg8GV313zbTzb5eO7jgRLl+99d8P2tbP6GkDNRygv6lgxX2X8iu9qx9gXZZi8hV9hAp4Fbw/qXzh00TL45ERzl41zsnF7MbwescG8mwjmbR4o00u1D9YCR+eFLkTJKxj+Gys+6bUdU8dpyn6zJCyLD74BkVMH2g0SyjQ=|
+</lev1add:EDCINVOICE>
+  </cfdi:Addenda>
+</cfdi:Comprobante>
