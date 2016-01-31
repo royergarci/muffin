@@ -29,7 +29,7 @@ class Factura extends CI_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('upload', array('error' => ' ' ));
+		$this->load->view('dashboard', array('error' => ' ' ));
 		$this->load->helper('form');
 
 		/*$query = ParseUser::query();
