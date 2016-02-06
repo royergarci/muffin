@@ -23,3 +23,6 @@
 		
 <script type="text/javascript" src="<?php echo base_url();?>js/wysihtml5-0.3.0.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/bootstrap3-wysihtml5.js"></script>
+<script>
+	var urlBase = '<?php echo base_url();?>';
+</script>

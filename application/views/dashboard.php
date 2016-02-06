@@ -117,23 +117,12 @@
         </div>
         <div class="col-md-7">
           <div class="panel panel-default">
-          <div class="panel-heading font-bold">Ventas por cliente</div>
           <div class="panel-body">
-            <div ui-jq="plot" ui-options="
-              [ [30, 80],  [20, 40], [30, 30],  [40, 20] ],
-              {
-                series: { pie: { show: true, innerRadius: 0.5, stroke: { width: 0 }, label: { show: true, threshold: 0.05 } } },
-                colors: ['#7266ba','#23b7e5','#27c24c','#fad733','#f05050'],
-                grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#ccc' },   
-                tooltip: true,
-                tooltipOpts: { content: '%s: %p.0%' }
-              }
-            " style="height: 240px; padding: 0px; position: relative;">
-            <canvas class="flot-base" width="462" height="240" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 462px; height: 240px;"></canvas>
-            <canvas class="flot-overlay" width="462" height="240" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 462px; height: 240px;"></canvas>
-            <span class="pieLabel" id="pieLabel0" style="position: absolute; top: 94px; left: 315.5px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(114,102,186);">undefined<br>30%</div></span>
-            <span class="pieLabel" id="pieLabel1" style="position: absolute; top: 196px; left: 150.5px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(35,183,229);">undefined<br>30%</div></span>
-            <span class="pieLabel" id="pieLabel2" style="position: absolute; top: 74px; left: 103.5px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(39,194,76);">undefined<br>30%</div></span><span class="pieLabel" id="pieLabel3" style="position: absolute; top: 3px; left: 168.5px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(250,215,51);">undefined<br>10%</div></span></div>
+             <div id="canvas-holder" style="width:100%">
+                <canvas id="myChart" width="400" height="250"></canvas>
+            </div>
+
+            
           </div>
         </div>
         </div>
@@ -158,11 +147,62 @@
   <? $this->load->view('includes/footerAdmin'); ?>
   <!-- / footer -->
 
-
-
 </div>
 
 
 <? $this->load->view('includes/scriptAdmin'); ?>
+ <script>
+
+
+      var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100);
+    };
+    var randomColorFactor = function() {
+        return Math.round(Math.random() * 255);
+    };
+    var randomColor = function(opacity) {
+        return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+    };
+
+
+      var config = {
+        cutoutPercentage: 50,
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: [
+                    30,
+                    20,
+                    20,
+                    20,
+                    10,
+                ],
+                backgroundColor: [
+                    "#F7464A",
+                    "#46BFBD",
+                    "#FDB45C",
+                    "#949FB1",
+                    "#4D5360",
+                ],
+            }],
+            labels: [
+                "Walmart",
+                "Tienda",
+                "Comercial Mexicána",
+                "Costco",
+                "Otros"
+            ]
+        },
+        options: {
+            responsive: true,
+            cutoutPercentage: 50,
+        },
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById("myChart").getContext("2d");
+        window.myPie = new Chart(ctx, config);   
+    };
+  </script>
 </body>
 </html>

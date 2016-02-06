@@ -29,9 +29,8 @@ class Factura extends CI_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('uploadFactura', array('error' => ' ' ));
+		$this->load->view('dashboard', array('error' => ' ' ));
 		$this->load->helper('form');
-
 		/*$query = ParseUser::query();
 		$query->equalTo("tipo_usuario", "STAFF"); 
 		$results = $query->find();
@@ -46,7 +45,14 @@ class Factura extends CI_Controller {
 		echo $count;*/
 
 	}
-	
+	public function catalogo(){
+		$this->load->view('catalogos/facturas', array('error' => ' ' ));
+		$this->load->helper('form');
+	}
+	public function formCarga(){
+		$this->load->view('uploadFactura', array('error' => ' ' ));
+		$this->load->helper('form');
+	}
 	public function do_upload()
 	{
 		$config['upload_path'] = './facturas/';
@@ -61,14 +67,13 @@ class Factura extends CI_Controller {
 		{
 			$error = array('error' => $this->upload->display_errors());
 
-			$this->load->view('upload', $error);
+			$this->load->view('uploadFactura', $error);
 			print_r ($error);
 		}
 		else
 		{
 			echo 'Aqui en upload';
 			$data['action'] = 'Subiendo la factura';
-			$this->load->view('cargandoFactura', $data);
 			$data = array('upload_data' => $this->upload->data());
 			
 			//print_r($data['upload_data']);
@@ -333,6 +338,24 @@ class Factura extends CI_Controller {
 				}
 		}
 
+	}
+	function datatable()
+	{
+		$query = new ParseQuery("facturas");
+		$results = $query->find();
+
+		$i=0;
+		foreach ($results as $factura){
+			//print_r($factura);
+
+			$data['data'][$i]['folio'] = $factura->folio;
+			$data['data'][$i]['serie'] = $factura->serie;
+			$data['data'][$i]['id'] = $factura->idFactura;
+			$data['data'][$i]['total'] = $factura->total;
+
+			$i++;
+		}
+		echo json_encode($data);
 	}
 }
 ?>

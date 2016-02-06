@@ -6,3 +6,5 @@
 <script src="<?= base_url() ?>js/ui-nav.js"></script>
 <script src="<?= base_url() ?>js/ui-toggle.js"></script>
 <script src="<?= base_url() ?>js/ui-client.js"></script>
+<script src="<?= base_url() ?>js/Chart.js"></script>
+<script src="<?= base_url() ?>js/jquery.dataTables.min.js"></script>
