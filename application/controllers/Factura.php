@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Mexico_City');
 require './vendor/autoload.php';
 use Parse\ParseClient;
 use Parse\ParseObject;
@@ -68,11 +69,11 @@ class Factura extends CI_Controller {
 			$error = array('error' => $this->upload->display_errors());
 
 			$this->load->view('uploadFactura', $error);
-			print_r ($error);
+			//print_r ($error);
 		}
 		else
 		{
-			echo 'Aqui en upload';
+			//echo 'Aqui en upload';
 			$data['action'] = 'Subiendo la factura';
 			$data = array('upload_data' => $this->upload->data());
 			
@@ -112,7 +113,7 @@ class Factura extends CI_Controller {
 		}
 	}
 	public function leerArchivo($name){
-		echo $name;
+		//echo $name;
 		//aqui se debe crear el proceso
 		$file = fopen(FCPATH.'facturas/'.$name, "rb") or exit("Unable to open file!");
 				
@@ -146,7 +147,7 @@ class Factura extends CI_Controller {
             if ($zip->open($file) === TRUE) {
                     $zip->extractTo(FCPATH.'facturas/tmp');
                     $zip->close();
-                    echo 'zip ok <br>';
+                    //echo 'zip ok <br>';
             } else {
                     echo 'failed';
             }
@@ -258,7 +259,7 @@ class Factura extends CI_Controller {
 		  		return $cliente;
 		  	}
 		  	else{
-		  		echo 'El cliente ya existe';
+		  		//echo 'El cliente ya existe';
 		  		return $results[0];
 		  	}
 		  	
@@ -281,6 +282,7 @@ class Factura extends CI_Controller {
 		$object->set("cliente", $cliente);
 		$object->set("total", $factura['total']);
 		$object->set("fecha", $factura['fecha']);
+		$object->set("fecha2",new DateTime($factura['fecha']));
 		/*$object->set("today", new DateTime());
 		$object->setArray("mylist", [1, 2, 3]);
 		$object->setAssociativeArray(

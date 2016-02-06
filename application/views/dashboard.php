@@ -72,47 +72,36 @@
                   <div ng-init="d3_3=[60,40]" ui-jq="sparkline" ui-options="[60,40], {type:'pie', height:40, sliceColors:['#fad733','#fff']}" class="sparkline inline"></div>
                 </div>
                 <div class="col dk padder-v r-r">
-                  <div class="text-primary-dk font-thin h1"><span>$102,300.50</span></div>
+                  <div class="text-primary-dk font-thin h1"><span>$<?php echo money_format('%i',$totalVentas); ?></span></div>
                   <span class="text-muted text-xs">Ventas del día</span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6">
-              <div class="panel padder-v item">
-                <div class="h1 text-info font-thin h1">521</div>
-                <span class="text-muted text-xs">Productos vendidos</span>
-                <div class="top text-right w-full">
-                  <i class="fa fa-caret-down text-warning m-r-sm"></i>
+            <div class="col-xs-12 m-b-md">
+              <div class="r bg-light dker item hbox no-border">
+                <div class="col w-xs v-middle hidden-md">
+                  <div ng-init="d3_3=[60,40]" ui-jq="sparkline" ui-options="[60,40], {type:'pie', height:40, sliceColors:['#fad733','#fff']}" class="sparkline inline"></div>
+                </div>
+                <div class="col dk padder-v r-r">
+                  <div class="text-primary-dk font-thin h1"><span> <?php echo $masVendido['numPiezasTotal'].' PZAS'; ?></span></div>
+                  <span class="text-muted text-xs">Producto mas vendido - <?php echo $masVendido['nombre']; ?></span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6">
-              <a href class="block panel padder-v bg-primary item">
-                <span class="text-white font-thin h1 block">930</span>
-                <span class="text-muted text-xs">Uploads</span>
-                <span class="bottom text-right w-full">
-                  <i class="fa fa-cloud-upload text-muted m-r-sm"></i>
-                </span>
-              </a>
-            </div>
-            <div class="col-xs-6">
-              <a href class="block panel padder-v bg-info item">
-                <span class="text-white font-thin h1 block">432</span>
-                <span class="text-muted text-xs">Comments</span>
-                <span class="top text-left">
-                  <i class="fa fa-caret-up text-warning m-l-sm"></i>
-                </span>
-              </a>
-            </div>
-            <div class="col-xs-6">
-              <div class="panel padder-v item">
-                <div class="font-thin h1">129</div>
-                <span class="text-muted text-xs">Feeds</span>
-                <div class="bottom text-left">
-                  <i class="fa fa-caret-up text-warning m-l-sm"></i>
+            <div class="col-xs-12 m-b-md">
+              <div class="r bg-light dker item hbox no-border">
+                <div class="col w-xs v-middle hidden-md">
+                  <div ng-init="d3_3=[60,40]" ui-jq="sparkline" ui-options="[60,40], {type:'pie', height:40, sliceColors:['#fad733','#fff']}" class="sparkline inline"></div>
+                </div>
+                <div class="col dk padder-v r-r">
+                  <div class="text-primary-dk font-thin h1"><span> <?php echo $menosVendido['numPiezasTotal'].' PZAS'; ?></span></div>
+                  <span class="text-muted text-xs">Producto menos vendido - <?php echo $menosVendido['nombre']; ?></span>
                 </div>
               </div>
             </div>
+            
+
+
           </div>
         </div>
         <div class="col-md-7">
@@ -132,14 +121,36 @@
     </div>
   </div>
   <!-- / main -->
-  <!-- right col -->
-
-  <!-- / right col -->
 </div>
 
-
+<!-- table -->
+ <div class="table-responsive">
+      <table class="table table-striped b-t b-light">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Piezas</th>
+            <th style="width:30px;">Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php 
+          foreach ($totalesProductos as $totProd) {
+          ?>
+            <tr>
+              <td><?php echo $totProd['nombre']; ?></td>
+              <td><?php echo $totProd['numPiezasTotal']; ?></td>
+              <td><?php echo $totProd['totalDinero']; ?></td>
+              <td></td>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+    </div>
+<!-- termina table -->
 
 	</div>
+
   </div>
   <!-- /content -->
   
@@ -154,7 +165,7 @@
  <script>
 
 
-      var randomScalingFactor = function() {
+    var randomScalingFactor = function() {
         return Math.round(Math.random() * 100);
     };
     var randomColorFactor = function() {
@@ -165,43 +176,55 @@
     };
 
 
-      var config = {
+      
+
+    window.onload = function() {
+        var ctx = document.getElementById("myChart").getContext("2d");
+
+        var data = '<?php echo json_encode($clientes); ?>';
+
+        var pieJson = JSON.parse(data);
+
+        console.log(pieJson);
+
+        var dataValue = [];
+        var labelsValue = [];
+
+        for (var i=0; i < pieJson.length; i++){
+            console.log(pieJson[i].nombre);
+
+            dataValue.push(pieJson[i].total);
+            labelsValue.push(pieJson[i].nombre);
+        }
+
+        var config = {
         cutoutPercentage: 50,
         type: 'pie',
         data: {
             datasets: [{
-                data: [
-                    30,
-                    20,
-                    20,
-                    20,
-                    10,
-                ],
+                data: dataValue,
                 backgroundColor: [
                     "#F7464A",
                     "#46BFBD",
                     "#FDB45C",
                     "#949FB1",
                     "#4D5360",
+                    "#F23e4A",
+                    "#46BFBD",
+                    "#FFFF5C",
+                    "#94BBB1",
+                    "#4D55F0",
                 ],
             }],
-            labels: [
-                "Walmart",
-                "Tienda",
-                "Comercial Mexicána",
-                "Costco",
-                "Otros"
-            ]
+            labels: labelsValue
         },
         options: {
             responsive: true,
             cutoutPercentage: 50,
         },
     };
-
-    window.onload = function() {
-        var ctx = document.getElementById("myChart").getContext("2d");
-        window.myPie = new Chart(ctx, config);   
+       
+        window.myPie = new Chart(ctx, config);  
     };
   </script>
 </body>

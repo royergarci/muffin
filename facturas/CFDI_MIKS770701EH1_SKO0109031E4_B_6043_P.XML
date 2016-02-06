@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" version="3.2" serie="B" folio="6043" fecha="2016-01-21T10:53:49" sello="XCvnNtH/coZesR2kmzaTK27dgAji31/UK5HoTVAndp6v8D/WB8djIh6Rq3QHWN3VmgLd4PG0uYNfYDP6gUvF9yf+TcD7NyADV7ck4nZj1CcjaBBGw9/aDl2ccYFqMcyYg+twZtusLlUxqq5NBOcwYs+b4k8axx5CP+u6YSU7wes=" formaDePago="PAGO EN UNA SOLA EXHIBICION" noCertificado="00001000000300485214" certificado="MIIEWjCCA0KgAwIBAgIUMDAwMDEwMDAwMDAzMDA0ODUyMTQwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzA3MTIxOTE1MjBaFw0xNzA3MTIxOTE1MjBaMIGmMR4wHAYDVQQDExVTSU1KQSBNSVpSQUhJIEtBTkFSRUsxHjAcBgNVBCkTFVNJTUpBIE1JWlJBSEkgS0FOQVJFSzEeMBwGA1UEChMVU0lNSkEgTUlaUkFISSBLQU5BUkVLMRYwFAYDVQQtEw1NSUtTNzcwNzAxRUgxMRswGQYDVQQFExJNSUtTNzcwNzAxTURGWk5NMDMxDzANBgNVBAsTBlVOSURBRDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAv6bLWvY6N8/CF4gRjU/u9PrJVWd9uVkC2Fm0uwXPR/3mebC3DzN/ybfViW0QCegD0f1A0PESBOafOsV0HxCMjoyzj13KNQMgtR4kwj1EG8PuBFzuqV5mz2VFYvceH0d+XJFickgbAiHVXVTN2chPseHKLImMYINeemoXuagd70ECAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAGPrNDDwOlXnmSorqxDCtrmNF4Qt08LifN7kLDJlMX+IM4dJRswXw7oNX3zl+KSmU9GFmzpBIm9DbWaaQyDxiI5ikPcHS/pX07ulR22iUqWH+GCsvYNy5Dzbe+HrT5mxvgpwnDpmPMlUS78NewPQpVfwyEGIEP4yYdCvTdDBo+cNN2whWlzQ0H5h0tOOGeSB6eYuzO8CeQBxPWsIGhosJB7D/ZOdxFrgWibqlj/W7BxedrlL9Y1ebKnKKoC52NS1uQHkj03c4bhT+xBj0BbUkuaxK4IAPC74VQWHgRNcqrGZzJtmeI0V3861qEbvLnzqwZvgU6HArlaP45WuXLgx1JE=" subTotal="182.00" total="182.00" metodoDePago="EN EFECTIVO" tipoDeComprobante="ingreso" Moneda="MXN" LugarExpedicion="MEXICO, D.F." NumCtaPago="NO IDENTIFICADO">
+  <cfdi:Emisor rfc="MIKS770701EH1" nombre="SIMJA MIZRAHI KANAREK">
+    <cfdi:DomicilioFiscal calle="EJERCITO NACIONAL" noExterior="1150" colonia="POLANCO" localidad="D.F" municipio="MIGUEL HIDALGO" estado="D.F." pais="MEXICO" codigoPostal="11560" />
+    <cfdi:ExpedidoEn calle="EJERCITO NACIONAL" noExterior="1150" colonia="POLANCO" localidad="D.F" municipio="MIGUEL HIDALGO" estado="D.F." pais="MEXICO" codigoPostal="11560" />
+    <cfdi:RegimenFiscal Regimen="Persona Fìsica con Actividad Empresarial" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="SKO0109031E4" nombre="SUPER KOSHER S. DE R.L.">
+    <cfdi:Domicilio calle="FUENTE DE TEMPLANZA" noExterior="6 LOCAL 3 P.B." colonia="LOMAS DE TECAMACHALCO" localidad="MEXICO" municipio="NAUCALPAN" estado="ESTADO DE MEXICO" pais="MEXICO" codigoPostal="53950" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="5" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515005" descripcion="ROLES DE CANELA" valorUnitario="14.00" importe="70.00" />
+    <cfdi:Concepto cantidad="1" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515012" descripcion="MUFFIN DE MANZANA" valorUnitario="14.00" importe="14.00" />
+    <cfdi:Concepto cantidad="2" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515043" descripcion="MUFFIN DE PLATANO CON CHOCOLATE" valorUnitario="14.00" importe="28.00" />
+    <cfdi:Concepto cantidad="5" unidad="UNIDADES (PIEZAS)" noIdentificacion="7503010515111" descripcion="BISQUET INTEGRAL" valorUnitario="14.00" importe="70.00" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="0.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="0.00" importe="0.00" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital version="1.0" UUID="9303AE15-31D3-48D2-9A0A-2DD88FE6ADFB" FechaTimbrado="2016-01-21T10:53:49" selloCFD="XCvnNtH/coZesR2kmzaTK27dgAji31/UK5HoTVAndp6v8D/WB8djIh6Rq3QHWN3VmgLd4PG0uYNfYDP6gUvF9yf+TcD7NyADV7ck4nZj1CcjaBBGw9/aDl2ccYFqMcyYg+twZtusLlUxqq5NBOcwYs+b4k8axx5CP+u6YSU7wes=" noCertificadoSAT="00001000000203312933" selloSAT="W0KvMxWaRXgzKFKPQ4mKoolPRYxTQc5KjpjFDznqGxbbnVavyjSLFal/aozoSjIUpgk49ecMs/FPiiPK1OfIWI4IaNnn9J0WDc/Na50RMdWygOMshJWlp5lw9vhm3FWITfQV7W9UTWWs3avfjkcZjI5e2FZTd/ikahnphpGU0j0=" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" />
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <lev1add:EDCINVOICE xsi:schemaLocation="http://www.edcinvoice.com/lev1add http://www.edcinvoice.com/lev1add/lev1add.xsd" xmlns:lev1add="http://www.edcinvoice.com/lev1add">[H0]|SKO0109031E4|900049|9.65||00001000000300485214|0|P|GENERAL||
+[H1]|B|6043||2016-01-21T10:53:49|||PAGO EN UNA SOLA EXHIBICION||ORIGINAL|FACTURA COMERCIAL|||||||||||||||0||||MEXICO, D.F.|EN EFECTIVO|MXN||||||||||||CIENTO OCHENTA Y DOS PESOS 00/100 MXN|D02|P|||||||
+[H2]|SIMJA MIZRAHI KANAREK|MIKS770701EH1||EJERCITO NACIONAL|1150||POLANCO|D.F||MIGUEL HIDALGO|D.F.|MEXICO|11560|Persona Fìsica con Actividad Empresarial||||||||||****NO IDENTIFICADO|
+[H3]||||EJERCITO NACIONAL|1150||POLANCO|D.F||MIGUEL HIDALGO|D.F.|MEXICO|11560||||||||||||
+[H4]|SUPER KOSHER S. DE R.L.|SKO0109031E4||FUENTE DE TEMPLANZA|6 LOCAL 3 P.B.||LOMAS DE TECAMACHALCO|MEXICO||NAUCALPAN|ESTADO DE MEXICO|MEXICO|53950||||||||||||
+[H5]|SUPER KOSHER S. DE R.L.|SKO0109031E4||FUENTE DE TEMPLANZA|6 LOCAL 3 P.B.||LOMAS DE TECAMACHALCO|MEXICO||NAUCALPAN|ESTADO DE MEXICO|MEXICO|53950||||||||||||
+[D]|7503010515005||ROLES DE CANELA||5|PCE||14.00||||||||||||||||70.00|0|||||||||||70.00|70.00|0|||||||||||||||||||||||||||||||||||
+[D]|7503010515012||MUFFIN DE MANZANA||1|PCE||14.00||||||||||||||||14.00|0|||||||||||14.00|14.00|0|||||||||||||||||||||||||||||||||||
+[D]|7503010515043||MUFFIN DE PLATANO CON CHOCOLATE||2|PCE||14.00||||||||||||||||28.00|0|||||||||||28.00|28.00|0|||||||||||||||||||||||||||||||||||
+[D]|7503010515111||BISQUET INTEGRAL||5|PCE||14.00||||||||||||||||70.00|0|||||||||||70.00|70.00|0|||||||||||||||||||||||||||||||||||
+[S]|182.00||||||0.00||182.00|182.00|13|0||||||||||||||||||4||||||182.00||||
+[CO]|||3.2|2016-01-21T10:53:49|ingreso|PAGO EN UNA SOLA EXHIBICION|182.00|MXN|182.00|EN EFECTIVO|MEXICO, D.F.|NO IDENTIFICADO|MIKS770701EH1|SIMJA MIZRAHI KANAREK|EJERCITO NACIONAL|1150|POLANCO|D.F|MIGUEL HIDALGO|D.F.|MEXICO|11560|EJERCITO NACIONAL|1150|POLANCO|D.F|MIGUEL HIDALGO|D.F.|MEXICO|11560|Pe|
+[CO]|rsona Fìsica con Actividad Empresarial|SKO0109031E4|SUPER KOSHER S. DE R.L.|FUENTE DE TEMPLANZA|6 LOCAL 3 P.B.|LOMAS DE TECAMACHALCO|MEXICO|NAUCALPAN|ESTADO DE MEXICO|MEXICO|53950|5|UNIDADES (PIEZAS)|7503010515005|ROLES DE CANELA|14.00|70.00|1|UNIDADES (PIEZAS)|7503010515012|MUFFIN DE MANZANA|1|
+[CO]|4.00|14.00|2|UNIDADES (PIEZAS)|7503010515043|MUFFIN DE PLATANO CON CHOCOLATE|14.00|28.00|5|UNIDADES (PIEZAS)|7503010515111|BISQUET INTEGRAL|14.00|70.00|IVA|0.00|0.00|0.00|||
+[SE]|XCvnNtH/coZesR2kmzaTK27dgAji31/UK5HoTVAndp6v8D/WB8djIh6Rq3QHWN3VmgLd4PG0uYNfYDP6gUvF9yf+TcD7NyADV7ck4nZj1CcjaBBGw9/aDl2ccYFqMcyYg+twZtusLlUxqq5NBOcwYs+b4k8axx5CP+u6YSU7wes=|
+</lev1add:EDCINVOICE>
+  </cfdi:Addenda>
+</cfdi:Comprobante>
